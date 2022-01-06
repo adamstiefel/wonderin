@@ -34,7 +34,7 @@ export default function Category(props) {
         position="absolute"
         display="flex"
         left="55px"
-        top="13px"
+        top="0px"
         level="1"
         children={category?.Title}
         {...getOverrideProps(overrides, "View.Heading[0]")}
@@ -52,7 +52,7 @@ export default function Category(props) {
         width="368px"
         height="136px"
         position="absolute"
-        left="34px"
+        left="39px"
         top="118px"
         padding="0px 0px 0px 0px"
         children={category?.Description}
@@ -65,7 +65,7 @@ export default function Category(props) {
         top="366px"
         size="large"
         variation="primary"
-        children="Primary Button"
+        children={category?.Title}
         {...getOverrideProps(overrides, "View.Button[0]")}
       ></Button>
       <View

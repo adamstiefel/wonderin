@@ -1,15 +1,13 @@
 import './App.css';
-import { Component1Collection, NavBar,  } from './ui-components';
+import { Component1Collection, NavBar, CategoryCollection } from './ui-components';
 
 function App() {
+    
   return (
       <div className='App'>
       <NavBar width={"100vw"}/>
-      <div style={{
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-     }}>
+
+      <div className='Categories'>
         <Component1Collection />   
       </div>
       </div>
@@ -17,6 +15,7 @@ function App() {
       
     
   );
-}
+  }
+
 
 export default App;
